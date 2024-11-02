@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#5C6BC0</color>         <!-- Azul suave -->
+    <color name="primary_variant">#3F51B5</color> <!-- Azul más oscuro para contraste -->
+    <color name="secondary">#FFB74D</color>       <!-- Naranja suave -->
+    <color name="secondary_variant">#FF8A65</color> <!-- Naranja más vibrante -->
+    <color name="background">#F2F2F2</color>      <!-- Fondo claro -->
+    <color name="surface">#613636</color>         <!-- Blanco para superficies -->
+    <color name="on_primary">#FFFFFF</color>      <!-- Texto claro para botones primarios -->
+    <color name="on_secondary">#FFFFFF</color>    <!-- Texto claro para botones secundarios -->
+    <color name="button_outline">#D25871</color>  <!-- Borde del botón -->
+    <color name="button_text">#D25871</color>
+    <color name="button_background">#F6D6DF</color>
+    <color name ="button_ripple">#F294AD</color>
+</resources>

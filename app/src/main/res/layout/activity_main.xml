@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background_gradient"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pmm.myapplication.MainActivity">
+
+    <!-- Texto de Opción -->
+    <TextView
+        android:id="@+id/tvOption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35sp"
+        android:text="Elige una opción: "
+        app:layout_constraintBottom_toTopOf="@+id/btnCall"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <!-- Botón 1: Llamada -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCall"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        style="@style/Widget.MyCustomApp.Button"
+        android:text="Llamar"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Botón 2: Alarma -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAlarm"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        style="@style/Widget.MyCustomApp.Button"
+        android:text="Alarma"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnCall"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Botón 3: URL -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnUrl"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="50dp"
+        style="@style/Widget.MyCustomApp.Button"
+        android:text="URL"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/btnCall"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Botón 4: SMS -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSms"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        style="@style/Widget.MyCustomApp.Button"
+        android:text="SMS"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/btnAlarm"
+        app:layout_constraintStart_toEndOf="@id/btnUrl" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

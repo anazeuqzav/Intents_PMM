@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- themes.xml -->
+    <style name="Theme.MyCustomApp" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Colores principales -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_variant</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorSecondaryVariant">@color/secondary_variant</item>
+        <item name="colorOnPrimary">@color/on_primary</item>
+        <item name="colorOnSecondary">@color/on_secondary</item>
+
+        <!-- Estilo global para botones redondeados y contorneados -->
+        <item name="materialButtonStyle">@style/Widget.MyCustomApp.Button</item>
+    </style>
+    <!-- styles.xml -->
+    <style name="Widget.MyCustomApp.Button" parent="Widget.AppCompat.Button">
+        <!-- Borde redondeado -->
+        <item name="cornerRadius">24dp</item>
+        <!-- Color del borde -->
+        <item name="strokeColor">@color/button_outline</item>
+        <item name="strokeWidth">2dp</item>
+        <!-- Color del texto -->
+        <item name="android:textColor">@color/button_text</item>
+        <!-- Fondo del botón (transparente para contorneado) -->
+        <item name="android:background">@drawable/button_background</item>
+        <item name="rippleColor">@color/button_ripple</item>
+    </style>
+</resources>
